@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="TacoTime">
 <head>
     <link href="http://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
 
@@ -8,18 +8,18 @@
     <link href="css/main.css" rel="stylesheet" />
     
     <!-- Include the core AngularJS library -->
-    <script src="js/shared/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
     
     <!-- Include the AngularJS routing library -->
     <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
 
 </head>
   
-<body ng-app="TacoTime">
+<body>
 
 	<!-- Pulls in the view -->
 	<div ng-view></div>
-
 
 	<!-- Modules -->
 	<script src="js/app.js"></script>
