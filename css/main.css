@@ -1,13 +1,15 @@
 h1,h2,h3,h4,h5,h6,p{
-	font-family: ‘Dosis’, Arial, serif;
+	font-family: 'Dosis', Arial, serif;
 }
 body {
 	background-color: white;
+
 }
 .container-fluid {
 	margin-top: 10px;
 	max-width: 400px;
 	background-color: white;
+
 }
 .tacohome img {
 	width: 100%;
@@ -21,23 +23,37 @@ body {
 	text-transform: uppercase;
 	font-size: 14px;
 	margin-bottom:10px;
+	font-weight: bold;
 }
 .tacohome .hashtag {
 	color: #85AD4A;
 }
 .tacohome h1 {
+	font-weight: bold;
 	color:#EE1D23;
 	text-transform: uppercase;
 	font-size: 50px;
 	border: 6px solid #83AB49;
 	background-color: #FEC11C;
 	border-radius: 10px;
-	padding-top: 7px;
-	padding-bottom: 1px;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-top: 7px 2px 1px 2px;
 	margin-bottom: 20px;
 }
 .tacohome p {
 	font-size: 12px;
+}
+.distance{
+	text-align: center;
+	padding-bottom:0;
+}
+.go{
+	background-color: #83AB49;
+	height:77px;
+}
+.details{
+	background-color: #FEC11C;
+	height: 77px;
+}
+.tacolist{
+	max-width:400px;
 }
