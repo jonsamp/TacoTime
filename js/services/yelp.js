@@ -21,7 +21,7 @@ app.factory('yelp', ['$http', function($http) {
   return {
       "retrieveYelp": function(name, callback) {
           var method = 'GET';
-          var url = 'http://api.yelp.com/v2/search';
+          var url = 'https://api.yelp.com/v2/search';
           var params = {
                   callback: 'angular.callbacks._0',
                   ll: x,
@@ -30,7 +30,9 @@ app.factory('yelp', ['$http', function($http) {
                   oauth_signature_method: "HMAC-SHA1",
                   oauth_timestamp: new Date().getTime(),
                   oauth_nonce: randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'),
-                  term: 'tacos'
+                  term: 'tacos',
+                  sort: 1,
+                  limit: 10
               };
           var consumerSecret = 'Jl7fibrfIw9H7DuUFcZpAyXsVb0'; //Consumer Secret
           var tokenSecret = 'jX4MjWLLuEnm50vzF6S-2T8D1nc'; //Token Secret

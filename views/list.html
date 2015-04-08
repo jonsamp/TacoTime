@@ -1,26 +1,50 @@
+<script>
+$(document).ready(getLocation);
+</script>
 <!-- Pulls in the view -->
 <div class="tacolist" ng-repeat="result in yelpresults">
-{{result.is_claimed}}<br/>
-{{result.distance}}<br/>
-{{result.mobile_url}}<br/>
-{{result.rating_img_url}}<br/>
-{{result.review_count}}<br/>
-{{result.name}}<br/>
-{{result.snippet_image_url}}<br/>
-{{result.rating}}<br/>
-{{result.url}}<br/>
-{{result.location}}<br/>
-{{result.menu_date_updated}}<br/>
-{{result.phone}}<br/>
-{{result.snippet_text}}<br/>
-{{result.image_url}}<br/>
-{{result.categories}}<br/>
-{{result.display_phone}}<br/>
-{{result.rating_img_url_large}}<br/>
-{{result.menu_provider}}<br/>
-{{result.id}}<br/>
-{{result.is_closed}}<br/>
-{{result.rating_img_url_small}}</br/>
-<br/>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="distance">{{Math.round((result.distance * 0.44704) / 60)}} </span><span class="minutes">minutes</span>
+
+			<span class="name">
+				<a href="{{result.mobile_url}}">{{result.name}}</a>
+			</span>
+			<span class="stars">
+				<img ng-src="{{result.rating_img_url}}" />
+			</span>
+
+		</div>
+
+		<div class="col-xs-2">
+			<div class="details">View more details</div>
+		</div>
+
+		<div class="col-xs-2">
+			<div class="go">GO</div>
+		</div>
+</div>
+	<!-- {{result.is_claimed}}<br/> -->
+	<!-- {{result.mobile_url}}<br/> -->
+	
+	
+	<!-- {{result.review_count}}<br/>
+	{{result.name}}<br/>
+	{{result.snippet_image_url}}<br/>
+	{{result.rating}}<br/>
+	{{result.url}}<br/>
+	{{result.location}}<br/>
+	{{result.menu_date_updated}}<br/>
+	{{result.phone}}<br/>
+	{{result.snippet_text}}<br/>
+	{{result.image_url}}<br/>
+	{{result.categories}}<br/>
+	{{result.display_phone}}<br/>
+	{{result.rating_img_url_large}}<br/>
+	{{result.menu_provider}}<br/>
+	{{result.id}}<br/> -->
+	<!-- {{result.is_closed}}<br/> -->
+	<!-- {{result.rating_img_url_small}}</br/> -->
 </div>
 

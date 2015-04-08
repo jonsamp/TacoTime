@@ -19,35 +19,9 @@
 
 </head>
   
-<body>
-	<!--cant get local host working so writing code here to move to view later -->
-<div class="tacohome">
-	<div class="container-fluid">
-		<img src="images/tacoalphapng.png">
-		<h2>Need a delicious late night snack without walking too far? Find out what's still open. Get ready, because it's <span class='hashtag'>#tacotime!</h2></span>
-		<h1>GET ME<br>TO TACOS</h1>
-		<p>we can't find you tacos if we don't know where you are, so please turn on your location services</p>
-	</div>
-</div>
+<body ng-app="TacoTime">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- Pulls in the view -->
-	<div ng-view></div>
+	
 
 	<!-- Modules -->
 	<script src="js/app.js"></script>
@@ -56,8 +30,10 @@
 	<script src="js/controllers/HomeController.js"></script>
 	<script src="js/controllers/ListController.js"></script>
 
-	<!-- Services -->
+	
 	<script src="js/services/yelp.js"></script>
+	<!-- Pulls in the view -->
+	<div ng-view></div>
 
 </body>
 </html>
