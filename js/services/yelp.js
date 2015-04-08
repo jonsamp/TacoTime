@@ -1,4 +1,6 @@
 var x = "";
+var myLat = "";
+var myLong = "";
 
 function randomString(length, chars) {
                 var result = '';
@@ -15,6 +17,8 @@ function getLocation() {
 function showPosition(position) {
     x = position.coords.latitude + "," + position.coords.longitude;  
 
+    myLat = position.coords.latitude;
+    myLong = position.coords.longitude;
   }
 
 app.factory('yelp', ['$http', function($http) {

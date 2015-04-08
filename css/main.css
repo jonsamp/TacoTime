@@ -50,6 +50,11 @@ body {
 	background-color: #83AB49;
 	height:77px;
 }
+
+.go a{
+	color: #000000;
+}
+
 .details{
 	background-color: #FEC11C;
 	height: 77px;
