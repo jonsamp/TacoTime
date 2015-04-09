@@ -67,9 +67,12 @@ body {
 	text-align: center;
 	padding-bottom:0;
 }
+.item{
+	border-bottom:1px solid gray;
+}
 .go{
 	background-color: #83AB49;
-	height:77px;
+	height:85px;
 }
 
 .go a{
@@ -78,8 +81,14 @@ body {
 
 .details{
 	background-color: #FEC11C;
-	height: 77px;
+	height: 82px;
 }
 .tacolist{
 	max-width:400px;
+}
+.tacolist h3, .tacolist h1{
+	margin:5px;
+}
+.tacolist p {
+	margin: 0;
 }

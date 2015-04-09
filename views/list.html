@@ -2,10 +2,10 @@
 	<div class="container-fluid">
 <div class="tacolist" ng-repeat="result in yelpresults">
 
-	<div class="row">
+	<div class="row item">
 			<div class="distance col-xs-2">
 				<h1>{{ Math.round((result.distance * 0.000621371) * 27) }} </h1>
-				<p class="minutes">minute walk</p>
+				<p class="minutes">min. walk</p>
 			</div>
 
 			<div class="main col-xs-6">
