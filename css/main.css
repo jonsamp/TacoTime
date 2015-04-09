@@ -68,14 +68,15 @@ body {
 	padding-bottom:0;
 }
 .item{
-	border-bottom:1px solid gray;
+	border-bottom:1px solid #d3d3d3;
 }
 .go{
 	background-color: #83AB49;
-	height:85px;
+	height:82px;
+	padding-top:19px;
 }
 
-.go a{
+.go a, .details a{
 	color: #000000;
 }
 
@@ -91,4 +92,11 @@ body {
 }
 .tacolist p {
 	margin: 0;
+}
+.distance{
+	padding:0;
+}
+.distance p{
+	font-size:13px;
+	padding:0;
 }
