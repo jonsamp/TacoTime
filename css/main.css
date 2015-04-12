@@ -121,3 +121,6 @@ body {
 	font-size:13px;
 	padding:0;
 }
+.col-centered {
+    text-align:center;
+}
