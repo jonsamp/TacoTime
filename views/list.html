@@ -1,8 +1,16 @@
 <!-- Pulls in the view -->
-	<div class="container-fluid">
-<div class="tacolist" ng-repeat="result in yelpresults">
+<div class="container-fluid">
+	<div class="row intro">
+		<div class="col-xs-10 tacoheaven">
+			<h4>Your taco heaven is just minutes away. <span class="green">#TACOTIME!</span></h4>
+		</div>
+		<div class="listTacoImg col-xs-2">
+			<img src="images/tacoalphapng.png" />
+		</div>
+	</div>
 
-	<div class="row item">
+	<div class="tacolist" ng-repeat="result in yelpresults">
+		<div class="row item">
 			<div class="distance col-xs-2">
 				<h1>{{ Math.round((result.distance * 0.000621371) * 27) }} </h1>
 				<p class="minutes">min. walk</p>
@@ -10,40 +18,18 @@
 
 			<div class="main col-xs-6">
 				<h3>{{result.name}}</h4>
-				<img ng-src="{{result.rating_img_url}}" />
-				<br/> 
+				<img ng-src="{{result.rating_img_url}}" /> 
 			</div>
 
 
-		<div class="col-xs-2 details">
-			<a href="{{result.mobile_url}}" target="_blank"><h4>View more details</a></h4>
-		</div>
+			<div class="col-xs-2 details">
+				<a href="{{result.mobile_url}}" target="_blank"><h4>View more details</a></h4>
+			</div>
 
-		<div class="col-xs-2 go">
-			<h3><a href="http://maps.google.com/?saddr={{myLat}},{{myLong}}&daddr={{result.location.coordinate.latitude}},{{result.location.coordinate.longitude}}&dirflg=w" target="_blank">GO!</a></h3>
+			<div class="col-xs-2 go">
+				<h3><a href="http://maps.google.com/?saddr={{myLat}},{{myLong}}&daddr={{result.location.coordinate.latitude}},{{result.location.coordinate.longitude}}&dirflg=w" target="_blank">GO!</a></h3>
+			</div>
 		</div>
-</div>
-</div>
-	<!-- {{result.is_claimed}}<br/> -->
-	<!-- {{result.mobile_url}}<br/> -->
-	
-	
-	<!-- {{result.review_count}}<br/>
-	{{result.name}}<br/>
-	{{result.snippet_image_url}}<br/>
-	{{result.rating}}<br/>
-	{{result.url}}<br/>
-	{{result.location}}<br/>
-	{{result.menu_date_updated}}<br/>
-	{{result.phone}}<br/>
-	{{result.snippet_text}}<br/>
-	{{result.image_url}}<br/>
-	{{result.categories}}<br/>
-	{{result.display_phone}}<br/>
-	{{result.rating_img_url_large}}<br/>
-	{{result.menu_provider}}<br/>
-	{{result.id}}<br/> -->
-	<!-- {{result.is_closed}}<br/> -->
-	<!-- {{result.rating_img_url_small}}</br/> -->
+	</div>
 </div>
 
