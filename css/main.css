@@ -75,7 +75,6 @@ a:hover,a:visited,a:active {
 	font-family: 'Dosis', Arial, serif;
 	text-transform: uppercase;
 	text-align: center;
-	border-bottom:1px solid #FEC11C;
 }
 .listTacoImg img{
 	height:40px;
@@ -136,4 +135,7 @@ a:hover,a:visited,a:active {
 .distance p{
 	font-size:13px;
 	padding:0;
+}
+#yelpFooter .row {
+	border-top: 1px solid #D3D3D3;
 }
