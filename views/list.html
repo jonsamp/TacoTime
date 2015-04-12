@@ -16,17 +16,17 @@
 				<p class="minutes">min. walk</p>
 			</div>
 
-			<div class="main col-xs-6">
-				<h3>{{result.name}}</h4>
-				<img ng-src="{{result.rating_img_url}}" /> 
+			<div class="main col-xs-7">
+				<a href="{{result.mobile_url}}" target="_blank"><h3>{{result.name}}</h3></a>
+				<img ng-src="{{result.rating_img_url}}" />
 			</div>
 
 
-			<div class="col-xs-2 details text-center">
+			<!-- <div class="col-xs-2 details text-center">
 				<a href="{{result.mobile_url}}" target="_blank"><h4>View more details</a></h4>
-			</div>
+			</div> -->
 
-			<div class="col-xs-2 go text-center">
+			<div class="col-xs-3 go text-center">
 				<a href="http://maps.google.com/?saddr={{myLat}},{{myLong}}&daddr={{result.location.coordinate.latitude}},{{result.location.coordinate.longitude}}&dirflg=w" target="_blank"><h3>GO!</h3></a>
 			</div>
 		</div>

@@ -3,7 +3,15 @@ h1,h2,h3,h4,h5,h6,p{
 }
 body {
 	background-color: #F8E4CC;
+	padding:20px;
+}
+a {
+	color: black;
 
+}
+a:hover,a:visited,a:active {
+	text-decoration: none;
+	color:#EE1D23;
 }
 .container-fluid {
 	padding:0;
@@ -67,6 +75,7 @@ body {
 	font-family: 'Dosis', Arial, serif;
 	text-transform: uppercase;
 	text-align: center;
+	border-bottom:1px solid #FEC11C;
 }
 .listTacoImg img{
 	height:40px;
@@ -79,7 +88,7 @@ body {
 	padding-bottom:0;
 }
 .item{
-	border-bottom:1px solid #d3d3d3;
+	border-top:1px solid #D3D3D3;
 }
 .note{
 	font-size:11px;
@@ -89,6 +98,8 @@ body {
 	background-color: #83AB49;
 	height:82px;
 	padding-top:22px;
+	padding-left: 0;
+	padding-right: 0;
 }
 .go a, .details a{
 	color: #000000;
@@ -100,6 +111,8 @@ body {
 	background-color: #FEC11C;
 	height: 82px;
 	padding-top:5px;
+	padding-left:5;
+	padding-right:5;
 }
 .details h4{
 	font-size: 16px;
@@ -110,7 +123,7 @@ body {
 	max-width:400px;
 }
 .tacolist h3, .tacolist h1{
-	margin:0;
+	margin: 8px 0 0 0;
 	padding: 0;
 }
 .tacolist p {
