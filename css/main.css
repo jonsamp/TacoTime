@@ -63,6 +63,18 @@ body {
 	text-align: center;
 	display:inline-block;
 }
+.intro{
+	font-family: 'Dosis', Arial, serif;
+	text-transform: uppercase;
+	text-align: center;
+	background-color:rgba(255,255,255,0.2);
+}
+.listTacoImg img{
+	height:40px;
+}
+.listTacoImg, .tacoheaven{
+	padding: 0;
+}
 .distance{
 	text-align: center;
 	padding-bottom:0;
@@ -70,21 +82,30 @@ body {
 .item{
 	border-bottom:1px solid #d3d3d3;
 }
+.note{
+	font-size:11px;
+	margin-top:5px;
+}
 .go{
 	background-color: #83AB49;
 	height:82px;
-	padding-top:19px;
+	padding-top:22px;
 }
-
 .go a, .details a{
 	color: #000000;
 }
-
+.green{
+	color: #83AB49;
+}
 .details{
 	background-color: #FEC11C;
 	height: 82px;
+	padding-top:5px;
 }
-.tacolist{
+.details h4{
+	font-size: 16px;
+}
+.tacolist, .intro{
 	max-width:400px;
 }
 .tacolist h3, .tacolist h1{
