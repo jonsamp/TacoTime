@@ -11,7 +11,7 @@
 
 	<div class="tacolist" ng-repeat="result in yelpresults">
 		<div class="row item">
-			<div class="distance col-xs-2 col-centered">
+			<div class="distance col-xs-2 text-center">
 				<h1>{{ Math.round((result.distance * 0.000621371) * 27) }} </h1>
 				<p class="minutes">min. walk</p>
 			</div>
@@ -22,12 +22,12 @@
 			</div>
 
 
-			<div class="col-xs-2 details col-centered">
+			<div class="col-xs-2 details text-center">
 				<a href="{{result.mobile_url}}" target="_blank"><h4>View more details</a></h4>
 			</div>
 
-			<div class="col-xs-2 go col-centered">
-				<h3><a href="http://maps.google.com/?saddr={{myLat}},{{myLong}}&daddr={{result.location.coordinate.latitude}},{{result.location.coordinate.longitude}}&dirflg=w" target="_blank">GO!</a></h3>
+			<div class="col-xs-2 go text-center">
+				<a href="http://maps.google.com/?saddr={{myLat}},{{myLong}}&daddr={{result.location.coordinate.latitude}},{{result.location.coordinate.longitude}}&dirflg=w" target="_blank"><h3>GO!</h3></a>
 			</div>
 		</div>
 	</div>

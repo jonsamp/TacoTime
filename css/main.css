@@ -104,15 +104,19 @@ body {
 }
 .details h4{
 	font-size: 16px;
+	margin: 0;
+	padding: auto;
 }
 .tacolist, .intro{
 	max-width:400px;
 }
 .tacolist h3, .tacolist h1{
-	margin:5px;
+	margin:0;
+	padding: 0;
 }
 .tacolist p {
 	margin: 0;
+	padding: 0;
 }
 .distance{
 	padding:0;
@@ -120,7 +124,4 @@ body {
 .distance p{
 	font-size:13px;
 	padding:0;
-}
-.col-centered {
-    text-align:center;
 }
