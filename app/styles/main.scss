@@ -1,0 +1,161 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Dosis', Arial, serif;
+}
+body {
+  background-color: #F8E4CC;
+  padding:20px;
+}
+a {
+  color: black;
+
+}
+a:hover {
+  text-decoration: none;
+  color:#EE1D23;
+}
+.container-fluid {
+  padding:0;
+  background-color: #F8E4CC;
+
+}
+.tacohome img {
+  width: 100%;
+}
+.tacohome {
+  text-align: center;
+}
+.tacohome h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom:10px;
+  font-weight: bold;
+}
+.tacohome .hashtag {
+  color: #85AD4A;
+}
+.tacohome h1 {
+  color:#EE1D23;
+  text-transform: uppercase;
+  font-size: 50px;
+  border: 10px solid #83AB49;
+  background-color: #FEC11C;
+  border-radius: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 100%;
+  box-shadow: 10px 10px 5px #888888;
+}
+.tacohome p {
+  font-size: 12px;
+}
+#yelpFooter{
+  text-align:center;
+}
+#yelpFooter img {
+  height: 30px;
+  width: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display:inline-block;
+}
+#yelpFooter p {
+  margin-bottom:0;
+  padding-top:10px;
+  text-align: center;
+  display:inline-block;
+}
+.intro{
+  font-family: 'Dosis', Arial, serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.listTacoImg img{
+  height:40px;
+}
+.listTacoImg, .tacoheaven{
+  padding: 0;
+}
+.distance{
+  text-align: center;
+  padding-bottom:0;
+}
+.item{
+  border-top:1px solid #D3D3D3;
+  padding: 1em 0;
+}
+.note{
+  font-size:11px;
+  margin-top:5px;
+}
+.go{
+  background-color: #83AB49;
+  height:82px;
+  padding-top:22px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.go a, .details a{
+  color: #000000;
+}
+.green{
+  color: #83AB49;
+}
+.details{
+  background-color: #FEC11C;
+  height: 82px;
+  padding-top:5px;
+  padding-left:5;
+  padding-right:5;
+}
+.details h4{
+  font-size: 16px;
+  margin: 0;
+  padding: auto;
+}
+.tacolist, .intro{
+}
+
+.restaurant-name{
+  font-size: 150%;
+  font-family: 'Doris' sans-serif;
+}
+
+.is-open{
+  border: 1px solid #83AB49;
+  padding: 0.25em 0.5em;
+  color: #83AB49;
+  border-radius: 6px;
+}
+
+.review{
+  color: #777;
+  margin-bottom: 2em;
+}
+.tacolist h3, .tacolist h1{
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+.tacolist p {
+  margin: 0;
+  padding: 0;
+}
+.distance{
+  padding:0;
+}
+.distance p{
+  font-size:13px;
+  padding:0;
+}
+.note {
+  border-top: 1px solid #D3D3D3;
+}
