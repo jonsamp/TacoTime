@@ -474,7 +474,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:jonsamp/portfolio.git',
+          remote: 'git@github.com:jonsamp/tacotime.git',
           branch: 'gh-pages'
         }
       },
