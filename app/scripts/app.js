@@ -8,31 +8,35 @@
  *
  * Main module of the application.
  */
-var app = angular
-  .module('TacoTime', [
+var app = angular.module('TacoTime', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngGeolocation',
+    'angularReverseGeocode'
   ])
   .config(['$routeProvider',
-    function($routeProvider) { 
-    $routeProvider
-          // route for the home page
-          .when('/', {
-              templateUrl : 'views/home.html',
-              controller  : 'HomeController'
-          })
+    '$compileProvider',
+    function($routeProvider, $compileProvider) {
+      $compileProvider.aHrefSanitizationWhitelist(/^\s*(uber|https?|tel):/);
 
-          // route for the directions page
-          .when('/list', {
-              templateUrl : 'views/list.html',
-              controller  : 'ListController'
-          })
-          .otherwise({ 
-            redirectTo: '/' 
-          });
+      $routeProvider
+        .when('/', {
+          templateUrl: 'views/home.html',
+          controller: 'HomeController',
+          controllerAs: 'vm'
+        })
+        .when('/list', {
+          templateUrl: 'views/list.html',
+          controller: 'ListController',
+          controllerAs: 'vm'
+        })
+        .otherwise({
+          redirectTo: '/'
+        });
 
-  }]);
+    }
+  ]);

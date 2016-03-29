@@ -1,12 +1,12 @@
-'use strict';
-
-/**
- * @ngdoc function
- * @name desktopApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the desktopApp
- */
 angular.module('TacoTime')
-  .controller('HomeController', function () {
-  });
+  .controller('HomeController', ['userLocation', function(userLocation) {
+    'use strict';
+    var vm = this;
+    vm.getUserLocation = function() {
+      userLocation.getLocation()
+        .then(function(data) {
+          vm.longitude = data.longitude;
+          vm.latitude = data.latitude;
+        });
+    };
+  }]);

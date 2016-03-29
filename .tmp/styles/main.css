@@ -8703,219 +8703,354 @@ button.close {
     display: none !important;
   }
 }
-/* line 6, ../../app/styles/main.scss */
-h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Dosis', Arial, serif;
-}
-
-/* line 9, ../../app/styles/main.scss */
-body {
-  background-color: #F8E4CC;
-  padding: 20px;
+/* line 10, ../../app/styles/main.scss */
+.col-xs-12 {
+  padding: 0;
 }
 
 /* line 13, ../../app/styles/main.scss */
+body {
+  background-color: #FAFBED;
+  font-family: 'Dosis', Arial, serif;
+  font-size: 14px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* line 20, ../../app/styles/main.scss */
 a {
   color: black;
 }
 
-/* line 17, ../../app/styles/main.scss */
+/* line 23, ../../app/styles/main.scss */
 a:hover {
   text-decoration: none;
-  color: #EE1D23;
+  color: #E53A40;
 }
 
-/* line 21, ../../app/styles/main.scss */
-.container-fluid {
-  padding: 0;
-  background-color: #F8E4CC;
-}
-
-/* line 26, ../../app/styles/main.scss */
-.tacohome img {
-  width: 100%;
-}
-
-/* line 29, ../../app/styles/main.scss */
+/* line 27, ../../app/styles/main.scss */
 .tacohome {
   text-align: center;
 }
-
-/* line 32, ../../app/styles/main.scss */
-.tacohome h2 {
+/* line 29, ../../app/styles/main.scss */
+.tacohome img {
+  width: 70%;
+  margin: 5vh;
+  margin-bottom: 2vh;
+}
+/* line 35, ../../app/styles/main.scss */
+.tacohome a.taco-button.green {
+  color: #E53A40;
+}
+/* line 37, ../../app/styles/main.scss */
+.tacohome a.taco-button.green div[lat] {
+  color: #E53A40;
+}
+/* line 42, ../../app/styles/main.scss */
+.tacohome .app-name {
+  background-color: #E53A40;
+  color: #FAFBED;
+  padding: 0.5em;
+}
+/* line 48, ../../app/styles/main.scss */
+.tacohome a.taco-button {
+  margin-top: 0.5em;
+  font-size: 4em;
   text-transform: uppercase;
-  font-size: 14px;
-  margin-bottom: 10px;
   font-weight: bold;
+  color: #87b13d;
+  background-color: #fbd14b;
+  border: 0.2em solid #9fc65b;
+  border-radius: 0.25em;
+  box-shadow: 0px 10px 0.25em rgba(0, 0, 0, 0.4);
+  padding: 0.5em 0.25em;
+  line-height: 1em;
+  display: block;
+  margin-bottom: 2em;
 }
-
-/* line 38, ../../app/styles/main.scss */
-.tacohome .hashtag {
-  color: #85AD4A;
-}
-
-/* line 41, ../../app/styles/main.scss */
-.tacohome h1 {
-  color: #EE1D23;
-  text-transform: uppercase;
-  font-size: 50px;
-  border: 10px solid #83AB49;
-  background-color: #FEC11C;
-  border-radius: 10px;
-  padding-top: 7px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  font-weight: 800;
-  line-height: 100%;
-  box-shadow: 10px 10px 5px #888888;
-}
-
-/* line 57, ../../app/styles/main.scss */
-.tacohome p {
-  font-size: 12px;
-}
-
-/* line 60, ../../app/styles/main.scss */
-#yelpFooter {
-  text-align: center;
-}
-
 /* line 63, ../../app/styles/main.scss */
-#yelpFooter img {
-  height: 30px;
-  width: 60px;
-  margin-top: 0;
-  margin-bottom: 0;
+.tacohome a.taco-button:active, .tacohome a.taco-button:active {
+  box-shadow: none;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.3);
+}
+/* line 67, ../../app/styles/main.scss */
+.tacohome a.taco-button span {
+  font-size: 0.5em;
+  margin-top: 0.25em;
+  position: relative;
+  top: 0.1em;
+}
+/* line 73, ../../app/styles/main.scss */
+.tacohome a.taco-button div[lat] {
+  color: #87b13d;
+  font-size: 0.5em;
+  padding: 0.25em;
+  line-height: 1em;
+  margin-top: 0.25em;
   display: inline-block;
 }
-
-/* line 70, ../../app/styles/main.scss */
-#yelpFooter p {
-  margin-bottom: 0;
-  padding-top: 10px;
-  text-align: center;
-  display: inline-block;
+/* line 82, ../../app/styles/main.scss */
+.tacohome .hashtag {
+  color: #9fc65b;
+  text-transform: uppercase;
 }
 
-/* line 76, ../../app/styles/main.scss */
+/* line 88, ../../app/styles/main.scss */
 .intro {
   font-family: 'Dosis', Arial, serif;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 1em;
+  margin: 0.5em 0;
+}
+/* line 93, ../../app/styles/main.scss */
+.intro .glyphicon {
+  position: relative;
+  top: 0.1em;
+}
+/* line 97, ../../app/styles/main.scss */
+.intro div[lat] {
+  display: inline-block;
+  margin-left: 0.25em;
 }
 
-/* line 82, ../../app/styles/main.scss */
-.listTacoImg img {
-  height: 40px;
-}
-
-/* line 85, ../../app/styles/main.scss */
-.listTacoImg, .tacoheaven {
-  padding: 0;
-}
-
-/* line 88, ../../app/styles/main.scss */
-.distance {
+/* line 104, ../../app/styles/main.scss */
+.result-list .restaurant {
   text-align: center;
-  padding-bottom: 0;
 }
-
-/* line 92, ../../app/styles/main.scss */
-.item {
-  border-top: 1px solid #D3D3D3;
-  padding: 1em 0;
-}
-
-/* line 96, ../../app/styles/main.scss */
-.note {
-  font-size: 11px;
-  margin-top: 5px;
-}
-
-/* line 100, ../../app/styles/main.scss */
-.go {
-  background-color: #83AB49;
-  height: 82px;
-  padding-top: 22px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 /* line 107, ../../app/styles/main.scss */
-.go a, .details a {
-  color: #000000;
+.result-list .restaurant img {
+  width: 100%;
+  max-height: 10em;
+  object-fit: cover;
+  -webkit-filter: grayscale(40%) brightness(0.6);
+          filter: grayscale(40%) brightness(0.6);
+  position: relative;
+  z-index: -1;
 }
-
-/* line 110, ../../app/styles/main.scss */
-.green {
-  color: #83AB49;
+/* line 116, ../../app/styles/main.scss */
+.result-list .restaurant p {
+  color: white;
 }
-
-/* line 113, ../../app/styles/main.scss */
-.details {
-  background-color: #FEC11C;
-  height: 82px;
-  padding-top: 5px;
-  padding-left: 5;
-  padding-right: 5;
-}
-
 /* line 120, ../../app/styles/main.scss */
-.details h4 {
-  font-size: 16px;
-  margin: 0;
-  padding: auto;
+.result-list .restaurant a.name {
+  font-size: 200%;
+  margin-top: -2.5em;
+  color: white;
+  display: block;
 }
-
-/* line 128, ../../app/styles/main.scss */
-.restaurant-name {
-  font-size: 150%;
-  font-family: 'Doris' sans-serif;
+/* line 126, ../../app/styles/main.scss */
+.result-list .restaurant a.name:hover {
+  color: #E53A40;
 }
-
-/* line 133, ../../app/styles/main.scss */
-.is-open {
-  border: 1px solid #83AB49;
-  padding: 0.25em 0.5em;
-  color: #83AB49;
-  border-radius: 6px;
+/* line 131, ../../app/styles/main.scss */
+.result-list .restaurant .formatted-address {
+  letter-spacing: 0.1em;
 }
-
-/* line 140, ../../app/styles/main.scss */
-.review {
-  color: #777;
-  margin-bottom: 2em;
+/* line 136, ../../app/styles/main.scss */
+.result-list .directions {
+  text-align: center;
+  font-size: 1.1em;
 }
-
-/* line 144, ../../app/styles/main.scss */
-.tacolist h3, .tacolist h1 {
-  margin: 8px 0 0 0;
-  padding: 0;
+/* line 139, ../../app/styles/main.scss */
+.result-list .directions p {
+  margin: 1em;
 }
-
-/* line 148, ../../app/styles/main.scss */
-.tacolist p {
-  margin: 0;
-  padding: 0;
+/* line 142, ../../app/styles/main.scss */
+.result-list .directions object {
+  position: relative;
+  top: 0.2em;
 }
-
+/* line 146, ../../app/styles/main.scss */
+.result-list .directions .glyphicon {
+  position: relative;
+  top: 0.3em;
+}
 /* line 152, ../../app/styles/main.scss */
-.distance {
-  padding: 0;
+.result-list .uber {
+  background-color: #000;
+  text-align: center;
+  font-size: 1.1em;
+  height: 53.78125px;
+  padding: 1em;
 }
-
-/* line 155, ../../app/styles/main.scss */
-.distance p {
-  font-size: 13px;
-  padding: 0;
-}
-
 /* line 159, ../../app/styles/main.scss */
-.note {
-  border-top: 1px solid #D3D3D3;
+.result-list .uber object {
+  position: relative;
+  top: 0.25em;
+}
+/* line 163, ../../app/styles/main.scss */
+.result-list .uber a {
+  color: #FAFBED;
+}
+/* line 167, ../../app/styles/main.scss */
+.result-list .uber .glyphicon {
+  color: #FAFBED;
+  position: relative;
+  top: 0.3em;
+}
+/* line 174, ../../app/styles/main.scss */
+.result-list .reviews {
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+/* line 177, ../../app/styles/main.scss */
+.result-list .reviews .phone-number {
+  letter-spacing: 0.03em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  display: inline-block;
+}
+/* line 184, ../../app/styles/main.scss */
+.result-list .reviews .review {
+  background-color: #f4e8ce;
+  padding: 1.25em;
+  padding-bottom: 1.5em;
+  margin: 1em 0;
+}
+
+/* line 192, ../../app/styles/main.scss */
+#yelpFooter {
+  background-color: #f4e8ce;
+  padding: 1em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+}
+
+/* line 199, ../../app/styles/main.scss */
+#yelpFooter img {
+  height: 30px;
+  width: 60px;
+  display: inline-block;
+  position: relative;
+  bottom: 0.35em;
+}
+
+/* line 206, ../../app/styles/main.scss */
+#yelpFooter p {
+  margin-bottom: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 219, ../../app/styles/main.scss */
+.go-0 {
+  background-color: #9fc65b;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-0:active {
+  background-color: #87b13d;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 222, ../../app/styles/main.scss */
+.go-1 {
+  background-color: #9ac453;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-1:active {
+  background-color: #81aa3b;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 225, ../../app/styles/main.scss */
+.go-2 {
+  background-color: #96c14c;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-2:active {
+  background-color: #7ba238;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 228, ../../app/styles/main.scss */
+.go-3 {
+  background-color: #92bf44;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-3:active {
+  background-color: #759b35;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 231, ../../app/styles/main.scss */
+.go-4 {
+  background-color: #8cb940;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-4:active {
+  background-color: #709333;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 234, ../../app/styles/main.scss */
+.go-5 {
+  background-color: #87b13d;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-5:active {
+  background-color: #6a8b30;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 237, ../../app/styles/main.scss */
+.go-6 {
+  background-color: #81aa3b;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-6:active {
+  background-color: #64842d;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 240, ../../app/styles/main.scss */
+.go-7 {
+  background-color: #7ba238;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-7:active {
+  background-color: #5e7c2b;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 243, ../../app/styles/main.scss */
+.go-8 {
+  background-color: #759b35;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-8:active {
+  background-color: #597528;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 246, ../../app/styles/main.scss */
+.go-9 {
+  background-color: #709333;
+  color: #FAFBED;
+}
+/* line 214, ../../app/styles/main.scss */
+.go-9:active {
+  background-color: #536d26;
+  box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* line 249, ../../app/styles/main.scss */
+.go a {
+  color: white;
+}
+
+/* line 252, ../../app/styles/main.scss */
+.green {
+  color: #9fc65b;
 }
 
 /*# sourceMappingURL=main.css.map */
