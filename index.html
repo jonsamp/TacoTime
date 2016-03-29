@@ -1,56 +1,9 @@
-<!DOCTYPE html>
-<html ng-app="TacoTime">
-<head>
-    <link href="http://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
-	<script src="js/shared/oauth.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css' />
-    <link href="css/main.css" rel="stylesheet" />
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Dosis:300,600,700' rel='stylesheet' type='text/css'>
-    
-    <!-- Include the core AngularJS library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
-    
-    <!-- Include the AngularJS routing library -->
-    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
-    <!-- first time collaborating with git. Just seeing how it works, I wanted to make a simple change and figured we'd end up wanting the app look anyway so... -Jamie "bull in a china shop" Gates-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name=apple-mobile-web-app-capable content=yes>
-    <meta name="mobile-web-app-capable" content="yes"> 
-</head>
-<div class='container'> 
-	<div class='row'>
-		<div class='col-xs-12 col-xs-offset-0 col-lg-4 col-lg-offset-4'>
-			<body ng-app="TacoTime">
-		</div>
-	</div>
-</div>
-	
+<!DOCTYPE html> <html> <head> <link rel="stylesheet" href="styles/main.6b727d28.css"> <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script> <link href="http://fonts.googleapis.com/css?family=Dosis:300,600,700" rel="stylesheet" type="text/css"> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> <meta name="apple-mobile-web-app-capable" content="yes"> </head> <body ng-app="TacoTime" ng-cloak> <script>! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-	<!-- Modules -->
-	<script src="js/app.js"></script>
-
-	<!-- Controllers -->
-	<script src="js/controllers/HomeController.js"></script>
-	<script src="js/controllers/ListController.js"></script>
-
-	
-	<script src="js/services/yelp.js"></script>
-	<!-- Pulls in the view -->
-	
-	<div class="container-fluid">
-		<div ng-view></div>
-		<div id="yelpFooter">
-			<div class="row">
-				<div class="col-xs-12">
-					<p>Powered by</p>
-					<img src="images/yelpbug.png">
-				</div>
-				
-			</div>
-		</div>
-	</div>
-</body>
-</html>
-
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');</script> <script src="scripts/vendor.43f234fd.js"></script> <script src="scripts/scripts.7ddcb975.js"></script> <!-- Pulls in the view --> <div ng-view></div> </body> </html>
