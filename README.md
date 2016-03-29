@@ -1,5 +1,4 @@
-![](https://github.com/jonsamp/tacotime/blob/master/app/images/tacotime.png =250x)
-# [Get TacoTime](jonsamp.github.io/tacotime/)
+# [Get TacoTime](http://jonsamp.github.io/tacotime/#/)
 TacoTime is an app to help you find tacos near you. With just one button, it finds your location, then gets restaurants around you that serve tacos that are currently open. It then provides directions.
 
 ## History
