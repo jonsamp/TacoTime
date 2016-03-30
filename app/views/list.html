@@ -6,7 +6,13 @@
 				<b><span class="glyphicon glyphicon-map-marker"></span><reverse-geocode lat="{{vm.latitude}}" lng="{{vm.longitude}}"></reverse-geocode></b>
 			</h4>
 			<h4 ng-if="!vm.latitude && !vm.longitude">
-				...
+				<div class="loader">
+					<div class="loader-inner ball-pulse">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
 			</h4>
 		</div>
 	</div>

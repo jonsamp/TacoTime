@@ -6,7 +6,18 @@
   <h1 class="app-name"><em>IT'S TACOTIME!</em></h1>
   <div class="container-fluid">
     <div ng-if="!vm.longitude && !vm.latitude">
-      <a ng-click="vm.getUserLocation()" class="taco-button">GET <br />LOCATION</a>
+      <a ng-click="vm.getUserLocation()" class="taco-button">GET <br />LOCATION
+        <div ng-if="vm.gettingUserLocation">
+          <div class="loader">
+            <div class="loader-inner ball-pulse">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </a>
+
     </div>
     <div ng-if="vm.longitude && vm.latitude">
       <a href="#/list" class="taco-button green">

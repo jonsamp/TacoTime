@@ -1,6 +1,9 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/"; // bower:scss
  @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
  // endbower
+
+@import "../bower_components/loaders.css/loaders.min.css";
+
 $bg: #FAFBED;
 $green: darken(#AACD6E, 5%);
 $red: #E53A40;
@@ -23,6 +26,10 @@ a {
 a:hover {
   text-decoration: none;
   color: $red;
+}
+
+.ball-pulse > div {
+  background: orange;
 }
 .tacohome {
   text-align: center;
