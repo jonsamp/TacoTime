@@ -1,5 +1,5 @@
-# [Get TacoTime](http://jonsamp.github.io/tacotime/#/)
-TacoTime is an app to help you find tacos near you. With just one button, it finds your location, then gets restaurants around you that serve tacos that are currently open. It then provides directions.
+# [TacoTime](http://jonsamp.github.io/tacotime/#/)
+TacoTime is an app to help you find tacos. With just one button, TacoTime finds your location, then finds restaurants around you that serve tacos that are currently open. It then provides directions.
 
 ## History
 TacoTime was originally the final project for a group graduating from Codecademy Labs in April of 2015. The group included:
@@ -19,3 +19,7 @@ The current release was released in March of 2016, and is what I like to call Ta
 - Taco joints now only include open restaurants.
 - Now displays your neighborhood.
 - Many many bug fixes and performance improvements.
+
+### 4/11/16 Change-log
+- Added loading animation when app is getting your location.
+- Fixed issue where navigating back to home page, then asking for results again would show a blank page.

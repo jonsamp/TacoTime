@@ -1,12 +1,12 @@
 <div class="tacohome">
-  <div class="container-fluid">
-    <img src="images/tacotime.png">
-  </div>
+    <div class="container-fluid">
+        <img src="images/tacotime.png">
+    </div>
 
-  <h1 class="app-name"><em>IT'S TACOTIME!</em></h1>
-  <div class="container-fluid">
-    <div ng-if="!vm.longitude && !vm.latitude">
-      <a ng-click="vm.getUserLocation()" class="taco-button">GET <br />LOCATION
+    <h1 class="app-name"><em>IT'S TACOTIME!</em></h1>
+    <div class="container-fluid">
+        <div ng-if="!vm.longitude && !vm.latitude">
+            <a ng-click="vm.getUserLocation()" class="taco-button">GET <br />LOCATION
         <div ng-if="vm.gettingUserLocation">
           <div class="loader">
             <div class="loader-inner ball-pulse">
@@ -18,12 +18,12 @@
         </div>
       </a>
 
+        </div>
+        <div ng-if="vm.longitude && vm.latitude">
+            <a href="#/list" class="taco-button green">
+                GET TACOS <br />
+                <span class="glyphicon glyphicon-map-marker"></span><reverse-geocode lat="{{vm.latitude}}" lng="{{vm.longitude}}"></reverse-geocode>
+            </a>
+        </div>
     </div>
-    <div ng-if="vm.longitude && vm.latitude">
-      <a href="#/list" class="taco-button green">
-        GET TACOS <br />
-        <span class="glyphicon glyphicon-map-marker"></span><reverse-geocode lat="{{vm.latitude}}" lng="{{vm.longitude}}"></reverse-geocode>
-      </a>
-    </div>
-  </div>
 </div>

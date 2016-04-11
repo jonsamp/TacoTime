@@ -2,11 +2,19 @@
 <html>
 
 <head>
+    <!-- build:css(./) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel='stylesheet' href='bower_components/loaders.css/loaders.css' />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
 
     <!-- build:css(.tmp) styles/main.css -->
-    <link href="styles/vendor/loaders.min.css" rel="stylesheet"  />
+    <!-- <link href="styles/vendor/loaders.min.css" rel="stylesheet"  /> -->
     <link href="styles/main.css" rel="stylesheet" />
     <!-- endbuild -->
+
+
 
     <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <link href='http://fonts.googleapis.com/css?family=Dosis:300,600,700' rel='stylesheet' type='text/css'>
@@ -18,15 +26,15 @@
 
 
     <script>
-    ! function(A, n, g, u, l, a, r) {
-        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
-                (A[l].q = A[l].q || []).push(arguments)
-            }, A[l].l = +new Date, a = n.createElement(g),
-            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
-    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ! function(A, n, g, u, l, a, r) {
+            A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                    (A[l].q = A[l].q || []).push(arguments)
+                }, A[l].l = +new Date, a = n.createElement(g),
+                r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+        }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
     </script>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -59,7 +67,7 @@
     <!-- endbuild -->
 
     <!-- Pulls in the view -->
-        <div ng-view></div>
+    <div ng-view></div>
 </body>
 
 </html>
