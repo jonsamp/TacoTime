@@ -8713,51 +8713,67 @@ body {
   background-color: #FAFBED;
   font-family: 'Dosis', Arial, serif;
   font-size: 14px;
-  max-width: 500px;
   margin: 0 auto;
 }
 
 /* line 23, ../../app/styles/main.scss */
+.container-fluid {
+  max-width: 500px;
+}
+
+/* line 26, ../../app/styles/main.scss */
 a {
   color: black;
 }
 
-/* line 26, ../../app/styles/main.scss */
+/* line 29, ../../app/styles/main.scss */
 a:hover {
   text-decoration: none;
   color: #E53A40;
 }
 
-/* line 31, ../../app/styles/main.scss */
+/* line 34, ../../app/styles/main.scss */
 .ball-pulse > div {
   background: orange;
 }
 
-/* line 34, ../../app/styles/main.scss */
+/* line 37, ../../app/styles/main.scss */
 .tacohome {
   text-align: center;
 }
-/* line 36, ../../app/styles/main.scss */
+/* line 39, ../../app/styles/main.scss */
+.tacohome .logo {
+  margin: auto;
+  margin-top: 1em;
+  background-color: #E53A40;
+  width: 15em;
+  height: 15em;
+  border-radius: 100%;
+  border: 0.5em solid #fbd14b;
+}
+/* line 48, ../../app/styles/main.scss */
 .tacohome img {
   width: 70%;
   margin: 5vh;
   margin-bottom: 2vh;
+  max-width: 124px;
 }
-/* line 42, ../../app/styles/main.scss */
+/* line 55, ../../app/styles/main.scss */
 .tacohome a.taco-button.green {
   color: #E53A40;
 }
-/* line 44, ../../app/styles/main.scss */
+/* line 57, ../../app/styles/main.scss */
 .tacohome a.taco-button.green div[lat] {
   color: #E53A40;
 }
-/* line 49, ../../app/styles/main.scss */
+/* line 62, ../../app/styles/main.scss */
 .tacohome .app-name {
-  background-color: #E53A40;
+  background-color: #9fc65b;
   color: #FAFBED;
   padding: 0.5em;
+  letter-spacing: 0.05em;
 }
-/* line 55, ../../app/styles/main.scss */
+/* line 69, ../../app/styles/main.scss */
 .tacohome a.taco-button {
   margin-top: 0.5em;
   font-size: 4em;
@@ -8773,19 +8789,19 @@ a:hover {
   display: block;
   margin-bottom: 2em;
 }
-/* line 70, ../../app/styles/main.scss */
+/* line 84, ../../app/styles/main.scss */
 .tacohome a.taco-button:active, .tacohome a.taco-button:active {
   box-shadow: none;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.3);
 }
-/* line 74, ../../app/styles/main.scss */
+/* line 88, ../../app/styles/main.scss */
 .tacohome a.taco-button span {
   font-size: 0.5em;
   margin-top: 0.25em;
   position: relative;
   top: 0.1em;
 }
-/* line 80, ../../app/styles/main.scss */
+/* line 94, ../../app/styles/main.scss */
 .tacohome a.taco-button div[lat] {
   color: #87b13d;
   font-size: 0.5em;
@@ -8794,35 +8810,35 @@ a:hover {
   margin-top: 0.25em;
   display: inline-block;
 }
-/* line 89, ../../app/styles/main.scss */
+/* line 103, ../../app/styles/main.scss */
 .tacohome .hashtag {
   color: #9fc65b;
   text-transform: uppercase;
 }
 
-/* line 95, ../../app/styles/main.scss */
+/* line 109, ../../app/styles/main.scss */
 .intro {
   font-family: 'Dosis', Arial, serif;
   text-transform: uppercase;
   text-align: center;
   margin: 0.5em 0;
 }
-/* line 100, ../../app/styles/main.scss */
+/* line 114, ../../app/styles/main.scss */
 .intro .glyphicon {
   position: relative;
   top: 0.1em;
 }
-/* line 104, ../../app/styles/main.scss */
+/* line 118, ../../app/styles/main.scss */
 .intro div[lat] {
   display: inline-block;
   margin-left: 0.25em;
 }
 
-/* line 111, ../../app/styles/main.scss */
+/* line 125, ../../app/styles/main.scss */
 .result-list .restaurant {
   text-align: center;
 }
-/* line 114, ../../app/styles/main.scss */
+/* line 128, ../../app/styles/main.scss */
 .result-list .restaurant img {
   width: 100%;
   max-height: 10em;
@@ -8832,45 +8848,45 @@ a:hover {
   position: relative;
   z-index: -1;
 }
-/* line 123, ../../app/styles/main.scss */
+/* line 137, ../../app/styles/main.scss */
 .result-list .restaurant p {
   color: white;
 }
-/* line 127, ../../app/styles/main.scss */
+/* line 141, ../../app/styles/main.scss */
 .result-list .restaurant a.name {
   font-size: 200%;
   margin-top: -2.5em;
   color: white;
   display: block;
 }
-/* line 133, ../../app/styles/main.scss */
+/* line 147, ../../app/styles/main.scss */
 .result-list .restaurant a.name:hover {
   color: #E53A40;
 }
-/* line 138, ../../app/styles/main.scss */
+/* line 152, ../../app/styles/main.scss */
 .result-list .restaurant .formatted-address {
   letter-spacing: 0.1em;
 }
-/* line 143, ../../app/styles/main.scss */
+/* line 157, ../../app/styles/main.scss */
 .result-list .directions {
   text-align: center;
   font-size: 1.1em;
 }
-/* line 146, ../../app/styles/main.scss */
+/* line 160, ../../app/styles/main.scss */
 .result-list .directions p {
   margin: 1em;
 }
-/* line 149, ../../app/styles/main.scss */
+/* line 163, ../../app/styles/main.scss */
 .result-list .directions object {
   position: relative;
   top: 0.2em;
 }
-/* line 153, ../../app/styles/main.scss */
+/* line 167, ../../app/styles/main.scss */
 .result-list .directions .glyphicon {
   position: relative;
   top: 0.3em;
 }
-/* line 159, ../../app/styles/main.scss */
+/* line 173, ../../app/styles/main.scss */
 .result-list .uber {
   background-color: #000;
   text-align: center;
@@ -8878,34 +8894,34 @@ a:hover {
   height: 53.78125px;
   padding: 1em;
 }
-/* line 166, ../../app/styles/main.scss */
+/* line 180, ../../app/styles/main.scss */
 .result-list .uber object {
   position: relative;
   top: 0.25em;
 }
-/* line 170, ../../app/styles/main.scss */
+/* line 184, ../../app/styles/main.scss */
 .result-list .uber a {
   color: #FAFBED;
 }
-/* line 174, ../../app/styles/main.scss */
+/* line 188, ../../app/styles/main.scss */
 .result-list .uber .glyphicon {
   color: #FAFBED;
   position: relative;
   top: 0.3em;
 }
-/* line 181, ../../app/styles/main.scss */
+/* line 195, ../../app/styles/main.scss */
 .result-list .reviews {
   margin-top: 1.5em;
   margin-bottom: 3em;
 }
-/* line 184, ../../app/styles/main.scss */
+/* line 198, ../../app/styles/main.scss */
 .result-list .reviews .phone-number {
   letter-spacing: 0.03em;
   margin-top: 0.5em;
   margin-left: 0.5em;
   display: inline-block;
 }
-/* line 191, ../../app/styles/main.scss */
+/* line 205, ../../app/styles/main.scss */
 .result-list .reviews .review {
   background-color: #f4e8ce;
   padding: 1.25em;
@@ -8913,7 +8929,7 @@ a:hover {
   margin: 1em 0;
 }
 
-/* line 199, ../../app/styles/main.scss */
+/* line 213, ../../app/styles/main.scss */
 #yelpFooter {
   background-color: #f4e8ce;
   padding: 1em;
@@ -8922,7 +8938,7 @@ a:hover {
   border-radius: 6px 6px 0 0;
 }
 
-/* line 206, ../../app/styles/main.scss */
+/* line 220, ../../app/styles/main.scss */
 #yelpFooter img {
   height: 30px;
   width: 60px;
@@ -8931,129 +8947,129 @@ a:hover {
   bottom: 0.35em;
 }
 
-/* line 213, ../../app/styles/main.scss */
+/* line 227, ../../app/styles/main.scss */
 #yelpFooter p {
   margin-bottom: 0;
   text-align: center;
   display: inline-block;
 }
 
-/* line 226, ../../app/styles/main.scss */
+/* line 240, ../../app/styles/main.scss */
 .go-0 {
   background-color: #9fc65b;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-0:active {
   background-color: #87b13d;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 229, ../../app/styles/main.scss */
+/* line 243, ../../app/styles/main.scss */
 .go-1 {
   background-color: #9ac453;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-1:active {
   background-color: #81aa3b;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 232, ../../app/styles/main.scss */
+/* line 246, ../../app/styles/main.scss */
 .go-2 {
   background-color: #96c14c;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-2:active {
   background-color: #7ba238;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 235, ../../app/styles/main.scss */
+/* line 249, ../../app/styles/main.scss */
 .go-3 {
   background-color: #92bf44;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-3:active {
   background-color: #759b35;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 238, ../../app/styles/main.scss */
+/* line 252, ../../app/styles/main.scss */
 .go-4 {
   background-color: #8cb940;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-4:active {
   background-color: #709333;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 241, ../../app/styles/main.scss */
+/* line 255, ../../app/styles/main.scss */
 .go-5 {
   background-color: #87b13d;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-5:active {
   background-color: #6a8b30;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 244, ../../app/styles/main.scss */
+/* line 258, ../../app/styles/main.scss */
 .go-6 {
   background-color: #81aa3b;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-6:active {
   background-color: #64842d;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 247, ../../app/styles/main.scss */
+/* line 261, ../../app/styles/main.scss */
 .go-7 {
   background-color: #7ba238;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-7:active {
   background-color: #5e7c2b;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 250, ../../app/styles/main.scss */
+/* line 264, ../../app/styles/main.scss */
 .go-8 {
   background-color: #759b35;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-8:active {
   background-color: #597528;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 253, ../../app/styles/main.scss */
+/* line 267, ../../app/styles/main.scss */
 .go-9 {
   background-color: #709333;
   color: #FAFBED;
 }
-/* line 221, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 .go-9:active {
   background-color: #536d26;
   box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* line 256, ../../app/styles/main.scss */
+/* line 270, ../../app/styles/main.scss */
 .go a {
   color: white;
 }
 
-/* line 259, ../../app/styles/main.scss */
+/* line 273, ../../app/styles/main.scss */
 .green {
   color: #9fc65b;
 }

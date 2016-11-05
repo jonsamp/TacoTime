@@ -12,7 +12,7 @@ angular.module('TacoTime')
         return {
             "retrieveYelp": function(longitude, latitude, YELP_CONFIG, callback) {
                 var method = 'GET';
-                var url = 'https://api.yelp.com/v2/search';
+                var url = 'http://api.yelp.com/v2/search';
                 var params = {
                     callback: 'angular.callbacks._0',
                     ll: latitude + ", " + longitude,
