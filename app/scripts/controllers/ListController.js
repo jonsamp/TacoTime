@@ -20,11 +20,9 @@ angular.module('TacoTime')
 						$scope.yelpresults = [];
 						yelpAPI.retrieveYelp(vm.longitude, vm.latitude, YELP_CONFIG, function(data) {
 
-							console.log(data);
-
 							var businesses = data.businesses.map(function(business) {
 
-								var googleDirectionsUrl = "http://maps.google.com/?saddr=" + vm.latitude + "," + vm.longitude + "&daddr=" + business.location.coordinate.latitude + "," + business.location.coordinate.longitude + "&dirflg=w";
+								var googleDirectionsUrl = "https://maps.google.com/?saddr=" + vm.latitude + "," + vm.longitude + "&daddr=" + business.location.coordinate.latitude + "," + business.location.coordinate.longitude + "&dirflg=w";
 								var addressUrl = business.location.address[0] + ", " + business.location.city + ", " + business.location.state_code + " " + business.location.postal_code;
 								var uberUrl = "uber://?client_id=" + UBER_CONFIG.clientId + "&action=setPickup&pickup=my_location&dropoff[latitude]=" + business.location.coordinate.latitude + "&dropoff[longitude]=" + business.location.coordinate.longitude + "&dropoff[formatted_address]=" + encodeURIComponent(addressUrl) + "&dropoff[nickname]=" + business.name;
 								return {
